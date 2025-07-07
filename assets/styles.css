@@ -113,16 +113,21 @@ h2.text-center:after {
     border-color: var(--primary);
 }
 
-.btn-secondary {
-    background-color: var(--secondary);
-    border-color: var(--secondary);
-}
-
 .btn-primary:hover {
     background-color: var(--primary-dark);
     border-color: var(--primary-dark);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(103, 157, 177, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
 }
 
 .btn-outline-primary {
