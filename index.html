@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmigoOP - Conversaciones significativas para adultos mayores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="Logo AmigoOP" class="logo" width="60px">
+                    <!--<span class="logo-text">Amigo<span class="logo-highlight">OP</span></span>-->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#plans">Planes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                        <li class="nav-item"><a class="btn btn-secondary" href="#form">Registrarse ahora</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Conversaciones significativas para tus seres queridos</h1>
+                    <p class="lead">Un amigo al otro lado del teléfono que inspira reflexión, compañía y apoyo en el día a día.</p>
+                    <a href="#form" class="btn btn-primary btn-lg">Registrarse ahora</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/image1.png" alt="Persona mayor sonriente hablando por teléfono" class="img-fluid rounded hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-phone-alt service-icon"></i>
+                            <h3>Llamadas semanales</h3>
+                            <p>Conversaciones que inspiran a reflexionar y planificar la semana.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hands-helping service-icon"></i>
+                            <h3>Soporte diario</h3>
+                            <p>Ayuda con citas, transportes y actividades cotidianas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-heart service-icon"></i>
+                            <h3>Compañía con propósito</h3>
+                            <p>Planes y actividades diseñadas para cada persona.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Planes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card plan-card h-100">
+                        <div class="card-header">
+                            <h3>Básico</h3>
+                            <div class="price">$29<span>/mes</span></div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> 1 llamada semanal (30 min)</li>
+                                <li><i class="fas fa-check"></i> Recordatorio de citas</li>
+                                <li><i class="fas fa-check"></i> Reporte semanal</li>
+                                <li class="na"><i class="fas fa-times"></i> Soporte para transporte</li>
+                                <li class="na"><i class="fas fa-times"></i> Planes personalizados</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary">Seleccionar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card plan-card h-100 featured" style="overflow: visible !important;">
+                        <div class="card-header">
+                            <div class="popular-badge">POPULAR</div>
+                            <h3>Estándar</h3>
+                            <div class="price">$49<span>/mes</span></div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> 2 llamadas semanales (45 min)</li>
+                                <li><i class="fas fa-check"></i> Recordatorio de citas</li>
+                                <li><i class="fas fa-check"></i> Soporte para transporte</li>
+                                <li><i class="fas fa-check"></i> Reporte semanal</li>
+                                <li class="na"><i class="fas fa-times"></i> Planes personalizados</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary">Seleccionar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card plan-card h-100">
+                        <div class="card-header">
+                            <h3>Premium</h3>
+                            <div class="price">$79<span>/mes</span></div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> 3 llamadas semanales (60 min)</li>
+                                <li><i class="fas fa-check"></i> Recordatorio de citas</li>
+                                <li><i class="fas fa-check"></i> Soporte para transporte</li>
+                                <li><i class="fas fa-check"></i> Planes personalizados</li>
+                                <li><i class="fas fa-check"></i> Reporte diario</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary">Seleccionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Personas mayores conversando" class="img-fluid rounded about-image">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Nuestra Misión</h2>
+                    <p>En AmigoOP creemos en el poder de las conversaciones significativas para mejorar la calidad de vida de los adultos mayores. Nuestros "amigos al teléfono" están capacitados para ofrecer compañía, apoyo y estimulación cognitiva a través de llamadas voluntarias y planificadas.</p>
+                    <p>No somos una app, no hay que aprender tecnología. Solo conversaciones humanas, cálidas y con propósito.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Familias felices</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Satisfacción</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" class="form-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card form-card">
+                        <div class="card-header">
+                            <h2 class="text-center">Registro de Servicio</h2>
+                            <p class="text-center">Complete el formulario para contratar el servicio para su ser querido</p>
+                        </div>
+                        <div class="card-body">
+                            <form id="registrationForm">
+                                <!-- Client Information -->
+                                <fieldset>
+                                    <legend><i class="fas fa-user"></i> Información del Cliente (quien paga el servicio)</legend>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="clientName" class="form-label">Nombre completo*</label>
+                                            <input type="text" class="form-control" id="clientName" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="clientEmail" class="form-label">Correo electrónico*</label>
+                                            <input type="email" class="form-control" id="clientEmail" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="clientPhone" class="form-label">Teléfono de contacto*</label>
+                                            <input type="tel" class="form-control" id="clientPhone" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="clientRelationship" class="form-label">Relación con el usuario final*</label>
+                                            <select class="form-select" id="clientRelationship" required>
+                                                <option value="" selected disabled>Seleccione...</option>
+                                                <option value="hijo/a">Hijo/a</option>
+                                                <option value="nieto/a">Nieto/a</option>
+                                                <option value="sobrino/a">Sobrino/a</option>
+                                                <option value="cuidador">Cuidador</option>
+                                                <option value="otro">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="clientAddress" class="form-label">Dirección de residencia (opcional)</label>
+                                        <input type="text" class="form-control" id="clientAddress">
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Método de pago*</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="credit" required>
+                                                <label class="form-check-label" for="creditCard">Tarjeta de crédito</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="debitCard" value="debit">
+                                                <label class="form-check-label" for="debitCard">Tarjeta de débito</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="transfer" value="transfer">
+                                                <label class="form-check-label" for="transfer">Transferencia bancaria</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Preferencias de reportes*</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="weeklyReport">
+                                                <label class="form-check-label" for="weeklyReport">Semanal</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="biweeklyReport">
+                                                <label class="form-check-label" for="biweeklyReport">Quincenal</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="emailReport">
+                                                <label class="form-check-label" for="emailReport">Email</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="whatsappReport">
+                                                <label class="form-check-label" for="whatsappReport">WhatsApp</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="planSelected" class="form-label">Plan seleccionado*</label>
+                                        <select class="form-select" id="planSelected" required>
+                                            <option value="" selected>Free (Prueba de 30 días)</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="termsConditions" required>
+                                        <label class="form-check-label" for="termsConditions">Acepto los términos y condiciones*</label>
+                                    </div>
+                                </fieldset>
+                                
+                                <!-- User Information -->
+                                <fieldset class="mt-4">
+                                    <legend><i class="fas fa-user-tie"></i> Información del Usuario Final (adulto mayor)</legend>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="userName" class="form-label">Nombre completo*</label>
+                                            <input type="text" class="form-control" id="userName" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="userBirthdate" class="form-label">Fecha de nacimiento*</label>
+                                            <input type="date" class="form-control" id="userBirthdate" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="userGender" class="form-label">Género*</label>
+                                            <select class="form-select" id="userGender" required>
+                                                <option value="" selected disabled>Seleccione...</option>
+                                                <option value="female">Femenino</option>
+                                                <option value="male">Masculino</option>
+                                                <option value="other">Otro</option>
+                                                <option value="prefer-not">Prefiero no decir</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="userLanguage" class="form-label">Idioma preferido*</label>
+                                            <select class="form-select" id="userLanguage" required>
+                                                <option value="" selected disabled>Seleccione...</option>
+                                                <option value="español">Español</option>
+                                                <option value="inglés">Inglés</option>
+                                                <option value="bilingüe">Bilingüe</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="userPhone" class="form-label">Número de teléfono para llamadas*</label>
+                                            <input type="tel" class="form-control" id="userPhone" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="userSchedule" class="form-label">Horarios preferidos para llamadas*</label>
+                                            <select class="form-select" id="userSchedule" required>
+                                                <option value="" selected disabled>Seleccione...</option>
+                                                <option value="morning">Mañana (9am-12pm)</option>
+                                                <option value="afternoon">Tarde (2pm-5pm)</option>
+                                                <option value="evening">Noche (6pm-8pm)</option>
+                                                <option value="flexible">Flexible</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="userInterests" class="form-label">Intereses o temas de conversación favoritos</label>
+                                        <textarea class="form-control" id="userInterests" rows="2"></textarea>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="userNeeds" class="form-label">Necesidades específicas de apoyo</label>
+                                        <textarea class="form-control" id="userNeeds" rows="2" placeholder="Ej: dificultad visual, apoyo con citas médicas"></textarea>
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="userIndependence" class="form-label">Nivel de independencia*</label>
+                                            <select class="form-select" id="userIndependence" required>
+                                                <option value="" selected disabled>Seleccione...</option>
+                                                <option value="autovalente">Autovalente</option>
+                                                <option value="ayuda-parcial">Con ayuda parcial</option>
+                                                <option value="supervision-total">Supervisión total</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="emergencyContact" class="form-label">Persona de contacto de emergencia (opcional)</label>
+                                            <input type="text" class="form-control" id="emergencyContact">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                
+                                <div class="d-grid gap-2 mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar Registro</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Lo que dicen nuestras familias</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <div class="testimonial-text">
+                                <i class="fas fa-quote-left"></i>
+                                <p>Mi mamá de 82 años espera con ilusión las llamadas de su amigoOP. Han desarrollado una relación tan bonita que a veces hablan como si se conocieran de toda la vida.</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>María G.</h5>
+                                <p>Hija de usuaria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <div class="testimonial-text">
+                                <i class="fas fa-quote-left"></i>
+                                <p>Como vivo en otro país, me preocupaba la soledad de mi abuelo. AmigoOP ha sido la solución perfecta. Recibo reportes semanales y sé que está en buenas manos.</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Carlos M.</h5>
+                                <p>Nieto de usuario</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body">
+                            <div class="testimonial-text">
+                                <i class="fas fa-quote-left"></i>
+                                <p>El apoyo con las citas médicas ha sido invaluable. No solo acompañan a mi padre, sino que me mantienen informada de todo. Un servicio humano y profesional.</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <h5>Ana L.</h5>
+                                <p>Hija de usuario</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Contacto</h2>
+                    <p>¿Tienes preguntas sobre nuestros servicios? Estamos aquí para ayudarte.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hola@amigoop.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Calle Amistad 123, Ciudad, País</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3>Amigo<span>OP</span></h3>
+                    <p>Conversaciones significativas para adultos mayores.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h4>Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#plans">Planes</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Newsletter</h4>
+                    <p>Suscríbete para recibir novedades y consejos.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo" required>
+                            <button class="btn btn-outline-light" type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 AmigoOP. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Hecho con <i class="fas fa-heart"></i> para adultos mayores</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
