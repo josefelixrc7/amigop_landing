@@ -3,6 +3,7 @@
     --primary-dark: #42778c;
     --secondary: #431f5b;
     --accent: #d85125;
+    --accent2: #e0a998;
     --light-accent: #c5ffbc;
     --highlight: #ab31aa;
     --white: #ffffff;
@@ -82,6 +83,10 @@ h2.text-center:after {
 .hero-image {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border: 5px solid var(--white);
+}
+
+.services-section {
+    background: linear-gradient(135deg, var(--accent2) 0%, var(--light-accent) 100%);
 }
 
 /* Navbar */
