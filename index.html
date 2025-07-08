@@ -178,7 +178,7 @@
                                                 <label class="form-check-label" for="transfer">Transferencia bancaria</label>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <!--<div class="col-md-6">
                                             <label class="form-label">Preferencias de reportes*</label>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="weeklyReport">
@@ -192,7 +192,7 @@
                                                 <input class="form-check-input" type="checkbox" id="emailReport" checked="true" disabled>
                                                 <label class="form-check-label" for="emailReport">Email</label>
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                     
                                     <div class="mb-3">
@@ -268,25 +268,32 @@
                                     
                                     <div class="mb-3">
                                         <label for="userInterests" class="form-label">Intereses o temas de conversación favoritos</label>
-                                        <textarea class="form-control" id="userInterests" rows="2" placeholder="Leer libros, hablar de deportes, música, etc."></textarea>
-                                    </div>
-                                    
-                                    <div class="mb-3">
-                                        <label for="userNeeds" class="form-label">Necesidades específicas de apoyo</label>
-                                        <textarea class="form-control" id="userNeeds" rows="2" placeholder="Ej: dificultad visual"></textarea>
+                                        <textarea class="form-control" id="userInterests" rows="2" placeholder="Lectura, películas, orar (rezar el Rosario), abordar barreras tecnológicas, etc."></textarea>
                                     </div>
                                     
                                     <div class="row mb-3">
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
+                                            <label for="userNeeds" class="form-label">Necesidades específicas de apoyo</label>
+                                            <textarea class="form-control" id="userNeeds" rows="2" placeholder="Ej: dificultad visual"></textarea>
+                                        </div>
+
+                                        <div class="col-md-6">
                                             <label for="userIndependence" class="form-label">Nivel de independencia*</label>
-                                            <select class="form-select" id="userIndependence" required>
-                                                <option value="" selected disabled>Seleccione...</option>
-                                                <option value="autovalente">Autovalente</option>
-                                                <option value="ayuda-parcial">Con ayuda parcial</option>
-                                                <option value="supervision-total">Supervisión total</option>
-                                            </select>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="userIndependence" id="autovalente" value="Autovalente" required>
+                                                <label class="form-check-label" for="esp">Autovalente</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="userIndependence" id="ayuda-parcial" value="Con ayuda parcial">
+                                                <label class="form-check-label" for="eng">Con ayuda parcial</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="userIndependence" id="supervision-total" value="Supervisión total">
+                                                <label class="form-check-label" for="bil">Supervisión total</label>
+                                            </div>
                                         </div>
                                     </div>
+                                    
                                     <div class="row mb-3">
                                         <div class="col-md-6">
                                             <label for="emergencyContact" class="form-label">Persona de contacto de emergencia (opcional)</label>
