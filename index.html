@@ -110,6 +110,7 @@
                             <p class="text-center">Complete el formulario para contratar el servicio para su ser querido</p>
                         </div>
                         <div class="card-body">
+                            <div id="notifications" class="pt-5"></div>
                             <form id="registrationForm">
                                 <!-- Client Information -->
                                 <fieldset>
@@ -117,40 +118,40 @@
                                     
                                     <div class="row mb-3">
                                         <div class="col-md-4">
-                                            <label for="clientFirstName" class="form-label">Nombres*</label>
-                                            <input type="text" class="form-control" id="clientFirstName" required>
+                                            <label for="cliente_nombres" class="form-label">Nombres*</label>
+                                            <input type="text" class="form-control" id="cliente_nombres" required>
                                         </div>
                                         <div class="col-md-4">
-                                            <label for="clientLastName" class="form-label">Apellidos*</label>
-                                            <input type="text" class="form-control" id="clientLastName" required>
+                                            <label for="cliente_apellidos" class="form-label">Apellidos*</label>
+                                            <input type="text" class="form-control" id="cliente_apellidos" required>
                                         </div>
                                         <div class="col-md-4">
-                                            <label for="clientEmail" class="form-label">Correo electrónico*</label>
-                                            <input type="email" class="form-control" id="clientEmail" required>
+                                            <label for="cliente_email" class="form-label">Correo electrónico*</label>
+                                            <input type="email" class="form-control" id="cliente_email" required>
                                         </div>
                                     </div>
                                     
                                     <div class="row mb-3">
                                         <div class="col-md-6">
-                                            <label for="clientPhoneCode" class="form-label">Código de país*</label>
-                                            <select class="form-select" id="clientPhoneCode" required>
+                                            <label for="cliente_codigo_pais" class="form-label">Código de país*</label>
+                                            <select class="form-select" id="cliente_codigo_pais" required>
                                                 <option value="58" selected>+ 58 (Venezuela)</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="clientPhone" class="form-label">Teléfono*</label>
-                                            <input type="tel" class="form-control" id="clientPhone" placeholder="4121234567" required>
+                                            <label for="cliente_telefono" class="form-label">Teléfono*</label>
+                                            <input type="tel" class="form-control" id="cliente_telefono" placeholder="4121234567" required>
                                         </div>
                                     </div>
                                     
                                     <div class="row mb-3">
                                         <div class="col-md-12">
-                                            <label for="clientRelationship" class="form-label">Relación con el usuario final*</label>
-                                            <select class="form-select" id="clientRelationship" required>
+                                            <label for="cliente_relacion_con_usuario" class="form-label">Relación con el usuario final*</label>
+                                            <select class="form-select" id="cliente_relacion_con_usuario" required>
                                                 <option value="" selected disabled>Seleccione...</option>
-                                                <option value="hijo/a">Hijo/a</option>
-                                                <option value="nieto/a">Nieto/a</option>
-                                                <option value="sobrino/a">Sobrino/a</option>
+                                                <option value="hijo">Hijo/a</option>
+                                                <option value="nieto">Nieto/a</option>
+                                                <option value="sobrino">Sobrino/a</option>
                                                 <option value="cuidador">Cuidador</option>
                                                 <option value="otro">Otro</option>
                                             </select>
@@ -158,23 +159,23 @@
                                     </div>
                                     
                                     <div class="mb-3">
-                                        <label for="clientAddress" class="form-label">Dirección de residencia*</label>
-                                        <input type="text" class="form-control" id="clientAddress" required>
+                                        <label for="cliente_direccion" class="form-label">Dirección de residencia*</label>
+                                        <input type="text" class="form-control" id="cliente_direccion" required>
                                     </div>
                                     
                                     <div class="row mb-3">
                                         <div class="col-md-6">
                                             <label class="form-label">Método de pago*</label>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="tarjeta_credito" required>
+                                                <input class="form-check-input" type="radio" name="cliente_metodo_pago" id="creditCard" value="tarjeta_credito" required>
                                                 <label class="form-check-label" for="creditCard">Tarjeta de crédito</label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="paymentMethod" id="debitCard" value="tarjeta_debito">
+                                                <input class="form-check-input" type="radio" name="cliente_metodo_pago" id="debitCard" value="tarjeta_debito">
                                                 <label class="form-check-label" for="debitCard">Tarjeta de débito</label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="paymentMethod" id="transfer" value="transferencia_bancaria">
+                                                <input class="form-check-input" type="radio" name="cliente_metodo_pago" id="transfer" value="transferencia_bancaria">
                                                 <label class="form-check-label" for="transfer">Transferencia bancaria</label>
                                             </div>
                                         </div>
@@ -196,8 +197,8 @@
                                     </div>
                                     
                                     <div class="mb-3">
-                                        <label for="planSelected" class="form-label">Plan seleccionado*</label>
-                                        <select class="form-select" id="planSelected" required>
+                                        <label for="cliente_plan" class="form-label">Plan seleccionado*</label>
+                                        <select class="form-select" id="cliente_plan" required>
                                             <option value="free" selected>Free (Prueba de 30 días)</option>
                                         </select>
                                     </div>
@@ -214,23 +215,23 @@
                                     
                                     <div class="row mb-3">
                                         <div class="col-md-4">
-                                            <label for="userFirstName" class="form-label">Nombres*</label>
-                                            <input type="text" class="form-control" id="userFirstName" required>
+                                            <label for="usuario_nombres" class="form-label">Nombres*</label>
+                                            <input type="text" class="form-control" id="usuario_nombres" required>
                                         </div>
                                         <div class="col-md-4">
-                                            <label for="userLastName" class="form-label">Apellidos*</label>
-                                            <input type="text" class="form-control" id="userLastName" required>
+                                            <label for="usuario_apellidos" class="form-label">Apellidos*</label>
+                                            <input type="text" class="form-control" id="usuario_apellidos" required>
                                         </div>
                                         <div class="col-md-4">
-                                            <label for="userBirthdate" class="form-label">Fecha de nacimiento*</label>
-                                            <input type="date" class="form-control" id="userBirthdate" required>
+                                            <label for="usuario_fecha_nacimiento" class="form-label">Fecha de nacimiento*</label>
+                                            <input type="date" class="form-control" id="usuario_fecha_nacimiento" required>
                                         </div>
                                     </div>
                                     
                                     <div class="row mb-3">
                                         <div class="col-md-6">
-                                            <label for="userGender" class="form-label">Género*</label>
-                                            <select class="form-select" id="userGender" required>
+                                            <label for="usuario_genero" class="form-label">Género*</label>
+                                            <select class="form-select" id="usuario_genero" required>
                                                 <option value="" selected disabled>Seleccione...</option>
                                                 <option value="femenino">Femenino</option>
                                                 <option value="masculino">Masculino</option>
@@ -239,8 +240,8 @@
                                             </select>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="userLanguage" class="form-label">Idioma preferido*</label>
-                                            <select class="form-select" id="userLanguage" required>
+                                            <label for="usuario_idioma" class="form-label">Idioma preferido*</label>
+                                            <select class="form-select" id="usuario_idioma" required>
                                                 <option value="" selected disabled>Seleccione...</option>
                                                 <option value="espanol">Español</option>
                                                 <option value="ingles">Inglés</option>
@@ -251,18 +252,18 @@
                                     
                                     <div class="row mb-3">
                                         <div class="col-md-4">
-                                            <label for="userPhoneCode" class="form-label">Código de país*</label>
-                                            <select class="form-select" id="userPhoneCode" required>
+                                            <label for="usuario_codigo_pais" class="form-label">Código de país*</label>
+                                            <select class="form-select" id="usuario_codigo_pais" required>
                                                 <option value="58" selected>+ 58 (Venezuela)</option>
                                             </select>
                                         </div>
                                         <div class="col-md-4">
-                                            <label for="userPhone" class="form-label">Número de teléfono para llamadas*</label>
-                                            <input type="tel" class="form-control" id="userPhone" required>
+                                            <label for="usuario_telefono" class="form-label">Número de teléfono para llamadas*</label>
+                                            <input type="tel" class="form-control" id="usuario_telefono" required>
                                         </div>
                                         <div class="col-md-4">
-                                            <label for="userSchedule" class="form-label">Horarios preferidos para llamadas*</label>
-                                            <select class="form-select" id="userSchedule" required>
+                                            <label for="usuario_horario_llamadas" class="form-label">Horarios preferidos para llamadas*</label>
+                                            <select class="form-select" id="usuario_horario_llamadas" required>
                                                 <option value="" selected disabled>Seleccione...</option>
                                                 <option value="manana">Mañana (9am-12pm)</option>
                                                 <option value="tarde">Tarde (2pm-5pm)</option>
@@ -273,28 +274,28 @@
                                     </div>
                                     
                                     <div class="mb-3">
-                                        <label for="userInterests" class="form-label">Intereses o temas de conversación favoritos</label>
-                                        <textarea class="form-control" id="userInterests" rows="2" placeholder="Lectura, películas, orar (rezar el Rosario), abordar barreras tecnológicas, etc."></textarea>
+                                        <label for="usuario_intereses" class="form-label">Intereses o temas de conversación favoritos</label>
+                                        <textarea class="form-control" id="usuario_intereses" rows="2" placeholder="Lectura, películas, orar (rezar el Rosario), abordar barreras tecnológicas, etc."></textarea>
                                     </div>
                                     
                                     <div class="row mb-3">
                                         <div class="col-md-6">
-                                            <label for="userNeeds" class="form-label">Necesidades específicas de apoyo</label>
-                                            <textarea class="form-control" id="userNeeds" rows="2" placeholder="Ej: dificultad visual"></textarea>
+                                            <label for="usuario_necesidades" class="form-label">Necesidades específicas de apoyo</label>
+                                            <textarea class="form-control" id="usuario_necesidades" rows="2" placeholder="Ej: dificultad visual"></textarea>
                                         </div>
 
                                         <div class="col-md-6">
-                                            <label for="userIndependence" class="form-label">Nivel de independencia*</label>
+                                            <label for="usuario_nivel_independencia" class="form-label">Nivel de independencia*</label>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="userIndependence" id="autovalente" value="autovalente" required>
+                                                <input class="form-check-input" type="radio" name="usuario_nivel_independencia" id="autovalente" value="autovalente" required>
                                                 <label class="form-check-label" for="esp">Autovalente</label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="userIndependence" id="ayuda-parcial" value="ayuda_parcial">
+                                                <input class="form-check-input" type="radio" name="usuario_nivel_independencia" id="ayuda-parcial" value="ayuda_parcial">
                                                 <label class="form-check-label" for="eng">Con ayuda parcial</label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="userIndependence" id="supervision-total" value="supervision_total">
+                                                <input class="form-check-input" type="radio" name="usuario_nivel_independencia" id="supervision-total" value="supervision_total">
                                                 <label class="form-check-label" for="bil">Supervisión total</label>
                                             </div>
                                         </div>
@@ -302,13 +303,13 @@
                                     
                                     <div class="row mb-3">
                                         <div class="col-md-6">
-                                            <label for="emergencyContact" class="form-label">Persona de contacto de emergencia (opcional)</label>
-                                            <input type="text" class="form-control" id="emergencyContact">
+                                            <label for="usuario_contacto_emergencia" class="form-label">Persona de contacto de emergencia (opcional)</label>
+                                            <input type="text" class="form-control" id="usuario_contacto_emergencia">
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-check-label" for="clienteIsEmergencyContact">Quien se suscribe es el contacto de emergencia*</label>
-                                                <select class="form-select" id="clienteIsEmergencyContact" required>
+                                                <label class="form-check-label" for="usuario_suscriptor_es_contacto_emergencia">Quien se suscribe es el contacto de emergencia*</label>
+                                                <select class="form-select" id="usuario_suscriptor_es_contacto_emergencia" required>
                                                     <option value="no" selected>No</option>
                                                     <option value="si">Sí</option>
                                                 </select>
