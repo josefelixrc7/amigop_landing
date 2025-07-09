@@ -166,15 +166,15 @@
                                         <div class="col-md-6">
                                             <label class="form-label">Método de pago*</label>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="credit" required>
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="tarjeta_credito" required>
                                                 <label class="form-check-label" for="creditCard">Tarjeta de crédito</label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="paymentMethod" id="debitCard" value="debit">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="debitCard" value="tarjeta_debito">
                                                 <label class="form-check-label" for="debitCard">Tarjeta de débito</label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="paymentMethod" id="transfer" value="transfer">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="transfer" value="transferencia_bancaria">
                                                 <label class="form-check-label" for="transfer">Transferencia bancaria</label>
                                             </div>
                                         </div>
@@ -198,7 +198,7 @@
                                     <div class="mb-3">
                                         <label for="planSelected" class="form-label">Plan seleccionado*</label>
                                         <select class="form-select" id="planSelected" required>
-                                            <option value="" selected>Free (Prueba de 30 días)</option>
+                                            <option value="free" selected>Free (Prueba de 30 días)</option>
                                         </select>
                                     </div>
                                     
@@ -232,35 +232,41 @@
                                             <label for="userGender" class="form-label">Género*</label>
                                             <select class="form-select" id="userGender" required>
                                                 <option value="" selected disabled>Seleccione...</option>
-                                                <option value="female">Femenino</option>
-                                                <option value="male">Masculino</option>
-                                                <option value="other">Otro</option>
-                                                <option value="prefer-not">Prefiero no decir</option>
+                                                <option value="femenino">Femenino</option>
+                                                <option value="masculino">Masculino</option>
+                                                <option value="otro">Otro</option>
+                                                <option value="prefiero_no_decir">Prefiero no decir</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
                                             <label for="userLanguage" class="form-label">Idioma preferido*</label>
                                             <select class="form-select" id="userLanguage" required>
                                                 <option value="" selected disabled>Seleccione...</option>
-                                                <option value="español">Español</option>
-                                                <option value="inglés">Inglés</option>
-                                                <option value="bilingüe">Bilingüe</option>
+                                                <option value="espanol">Español</option>
+                                                <option value="ingles">Inglés</option>
+                                                <option value="bilingue">Bilingüe</option>
                                             </select>
                                         </div>
                                     </div>
                                     
                                     <div class="row mb-3">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
+                                            <label for="userPhoneCode" class="form-label">Código de país*</label>
+                                            <select class="form-select" id="userPhoneCode" required>
+                                                <option value="58" selected>+ 58 (Venezuela)</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
                                             <label for="userPhone" class="form-label">Número de teléfono para llamadas*</label>
                                             <input type="tel" class="form-control" id="userPhone" required>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
                                             <label for="userSchedule" class="form-label">Horarios preferidos para llamadas*</label>
                                             <select class="form-select" id="userSchedule" required>
                                                 <option value="" selected disabled>Seleccione...</option>
-                                                <option value="morning">Mañana (9am-12pm)</option>
-                                                <option value="afternoon">Tarde (2pm-5pm)</option>
-                                                <option value="evening">Noche (6pm-8pm)</option>
+                                                <option value="manana">Mañana (9am-12pm)</option>
+                                                <option value="tarde">Tarde (2pm-5pm)</option>
+                                                <option value="noche">Noche (6pm-8pm)</option>
                                                 <option value="flexible">Flexible</option>
                                             </select>
                                         </div>
@@ -280,15 +286,15 @@
                                         <div class="col-md-6">
                                             <label for="userIndependence" class="form-label">Nivel de independencia*</label>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="userIndependence" id="autovalente" value="Autovalente" required>
+                                                <input class="form-check-input" type="radio" name="userIndependence" id="autovalente" value="autovalente" required>
                                                 <label class="form-check-label" for="esp">Autovalente</label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="userIndependence" id="ayuda-parcial" value="Con ayuda parcial">
+                                                <input class="form-check-input" type="radio" name="userIndependence" id="ayuda-parcial" value="ayuda_parcial">
                                                 <label class="form-check-label" for="eng">Con ayuda parcial</label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="userIndependence" id="supervision-total" value="Supervisión total">
+                                                <input class="form-check-input" type="radio" name="userIndependence" id="supervision-total" value="supervision_total">
                                                 <label class="form-check-label" for="bil">Supervisión total</label>
                                             </div>
                                         </div>
@@ -300,9 +306,12 @@
                                             <input type="text" class="form-control" id="emergencyContact">
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="mb-3 form-check">
-                                                <input type="checkbox" class="form-check-input" id="clienteIsEmergencyContact">
-                                                <label class="form-check-label" for="clienteIsEmergencyContact">Quien se suscribe es el contacto de emergencia</label>
+                                            <div class="mb-3">
+                                                <label class="form-check-label" for="clienteIsEmergencyContact">Quien se suscribe es el contacto de emergencia*</label>
+                                                <select class="form-select" id="clienteIsEmergencyContact" required>
+                                                    <option value="no" selected>No</option>
+                                                    <option value="si">Sí</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
