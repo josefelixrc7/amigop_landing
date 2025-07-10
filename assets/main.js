@@ -77,10 +77,23 @@ $(document).ready(function() {
                 $(this).removeClass('is-invalid');
             }
         });
+
+        // Telephone validation
+        const regexNumeros = /^\d{10}$/;
+        if (regexNumeros.test($('#cliente_telefono').val()) === false)
+        {
+            $('#cliente_telefono').addClass('is-invalid');
+            isValid = false;
+        }
+        if (regexNumeros.test($('#usuario_telefono').val()) === false)
+        {
+            $('#usuario_telefono').addClass('is-invalid');
+            isValid = false;
+        }
         
         if (!isValid)
         {
-            showNotification('Por favor complete todos los campos requeridos.', 'warning');
+            showNotification('Por favor complete todos los campos requeridos de manera correcta.', 'warning');
             return;
         }
         
@@ -163,6 +176,7 @@ $(document).ready(function() {
     {
         const notificationDiv = $('#notifications');
         notificationDiv.append($(`<div class="alert alert-${type}">${message}</div>`));
+        location.href="#notifications";
     }
     
 });
