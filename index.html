@@ -88,17 +88,6 @@
         </div>
     </section>
 
-    <!-- Hero Section 6-->
-    <section class="hero-section text-center">
-        <div class="container">
-            <div class="container py-5">
-                <div class="mb-2">
-                    <img src="assets/images/banner6.png" alt="Banner 6" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Form Section -->
     <section id="form" class="form-section py-5">
         <div class="container">
@@ -147,27 +136,92 @@
                                     <div class="row mb-3">
                                         <div class="col-md-12">
                                             <label for="cliente_relacion_con_usuario" class="form-label">Relación con el usuario final*</label>
-                                            <select class="form-select" id="cliente_relacion_con_usuario" required>
-                                                <option value="" selected disabled>Seleccione...</option>
-                                                <option value="hijo">Hijo/a</option>
-                                                <option value="nieto">Nieto/a</option>
-                                                <option value="sobrino">Sobrino/a</option>
-                                                <option value="cuidador">Cuidador</option>
-                                                <option value="otro">Otro</option>
-                                            </select>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="cliente_relacion_con_usuario" value="hijo" required>
+                                                <label class="form-check-label">Hijo/a</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="cliente_relacion_con_usuario" value="nieto">
+                                                <label class="form-check-label">Nieto/a</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="cliente_relacion_con_usuario" value="sobrino">
+                                                <label class="form-check-label">Sobrino/a</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="cliente_relacion_con_usuario" value="cuidador">
+                                                <label class="form-check-label">Cuidador</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="cliente_relacion_con_usuario" value="otro">
+                                                <label class="form-check-label">Otro</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    
-                                    <div class="mb-3">
-                                        <label for="cliente_direccion" class="form-label">Dirección de residencia*</label>
-                                        <input type="text" class="form-control" id="cliente_direccion" required>
                                     </div>
                                     
                                     <div class="row mb-3">
                                         <div class="col-md-6">
+                                            <label for="cliente_direccion_pais" class="form-label">País*</label>
+                                            <select class="form-select" id="cliente_direccion_pais" required>
+                                                <option value="venezuela" selected>Venezuela</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cliente_direccion_estado" class="form-label">Estado*</label>
+                                            <select class="form-select" id="cliente_direccion_estado" required>
+                                                <option value="amazonas">Amazonas</option>
+                                                <option value="anzoategui">Anzoátegui</option>
+                                                <option value="apure">Apure</option>
+                                                <option value="aragua">Aragua</option>
+                                                <option value="barinas">Barinas</option>
+                                                <option value="bolivar">Bolívar</option>
+                                                <option value="carabobo">Carabobo</option>
+                                                <option value="cojedes">Cojedes</option>
+                                                <option value="delta_amacuro">Delta Amacuro</option>
+                                                <option value="distrito_capital">Distrito Capital</option>
+                                                <option value="falcon">Falcón</option>
+                                                <option value="guarico">Guárico</option>
+                                                <option value="lara">Lara</option>
+                                                <option value="merida">Mérida</option>
+                                                <option value="miranda">Miranda</option>
+                                                <option value="monagas">Monagas</option>
+                                                <option value="nueva_esparta">Nueva Esparta</option>
+                                                <option value="portuguesa">Portuguesa</option>
+                                                <option value="sucre">Sucre</option>
+                                                <option value="tachira">Táchira</option>
+                                                <option value="trujillo">Trujillo</option>
+                                                <option value="vargas">La Guaira</option>
+                                                <option value="yaracuy">Yaracuy</option>
+                                                <option value="zulia">Zulia</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="cliente_direccion_ciudad" class="form-label">Ciudad*</label>
+                                            <input type="text" class="form-control" id="cliente_direccion_ciudad" placeholder="Ej: Caracas" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cliente_direccion_codigo_postal" class="form-label">Código postal*</label>
+                                            <input type="number" class="form-control" id="cliente_direccion_codigo_postal" required>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="cliente_direccion1" class="form-label">Dirección 1*</label>
+                                            <input type="text" class="form-control" id="cliente_direccion1" placeholder="Ej: Caracas" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cliente_direccion2" class="form-label">Dirección 2</label>
+                                            <input type="text" class="form-control" id="cliente_direccion2">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-3 d-none">
+                                        <div class="col-md-6">
                                             <label class="form-label">Método de pago*</label>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="cliente_metodo_pago" id="creditCard" value="tarjeta_credito" required>
+                                                <input checked class="form-check-input" type="radio" name="cliente_metodo_pago" id="creditCard" value="tarjeta_credito">
                                                 <label class="form-check-label" for="creditCard">Tarjeta de crédito</label>
                                             </div>
                                             <div class="form-check">
@@ -196,15 +250,15 @@
                                         </div>-->
                                     </div>
                                     
-                                    <div class="mb-3">
+                                    <div class="mb-3 d-none">
                                         <label for="cliente_plan" class="form-label">Plan seleccionado*</label>
                                         <select class="form-select" id="cliente_plan" required>
                                             <option value="free" selected>Free (Prueba de 30 días)</option>
                                         </select>
                                     </div>
                                     
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="termsConditions" required>
+                                    <div class="mb-3 form-check d-none">
+                                        <input type="checkbox" class="form-check-input" id="termsConditions">
                                         <label class="form-check-label" for="termsConditions">Acepto los términos y condiciones*</label>
                                     </div>
                                 </fieldset>
@@ -229,57 +283,69 @@
                                     </div>
                                     
                                     <div class="row mb-3">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
                                             <label for="usuario_genero" class="form-label">Género*</label>
-                                            <select class="form-select" id="usuario_genero" required>
-                                                <option value="" selected disabled>Seleccione...</option>
-                                                <option value="femenino">Femenino</option>
-                                                <option value="masculino">Masculino</option>
-                                                <option value="otro">Otro</option>
-                                                <option value="prefiero_no_decir">Prefiero no decir</option>
-                                            </select>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="usuario_genero" value="femenino" required>
+                                                <label class="form-check-label">Femenino</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="usuario_genero" value="femenino">
+                                                <label class="form-check-label">Masculino</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="usuario_genero" value="otro">
+                                                <label class="form-check-label">Otro</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="usuario_genero" value="prefiero_no_decir">
+                                                <label class="form-check-label">Prefiero no decir</label>
+                                            </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
                                             <label for="usuario_idioma" class="form-label">Idioma preferido*</label>
-                                            <select class="form-select" id="usuario_idioma" required>
-                                                <option value="" selected disabled>Seleccione...</option>
-                                                <option value="espanol">Español</option>
-                                                <option value="ingles">Inglés</option>
-                                                <option value="bilingue">Bilingüe</option>
-                                            </select>
+                                            <div class="form-check">
+                                                <input checked class="form-check-input" type="radio" name="usuario_idioma" value="espanol">
+                                                <label class="form-check-label">Español</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 d-none">
+                                            <label for="usuario_horario_llamadas" class="form-label">Horarios preferidos para llamadas*</label>
+                                            <div class="form-check">
+                                                <input checked class="form-check-input" type="radio" name="usuario_horario_llamadas" value="manana">
+                                                <label class="form-check-label">Mañana</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="usuario_horario_llamadas" value="tarde">
+                                                <label class="form-check-label">Tarde</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="usuario_horario_llamadas" value="flexible">
+                                                <label class="form-check-label">Flexible</label>
+                                            </div>
                                         </div>
                                     </div>
                                     
                                     <div class="row mb-3">
-                                        <div class="col-md-4">
+                                        <div class="col-md-6">
                                             <label for="usuario_codigo_pais" class="form-label">Código de país*</label>
                                             <select class="form-select" id="usuario_codigo_pais" required>
                                                 <option value="58" selected>+ 58 (Venezuela)</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-6">
                                             <label for="usuario_telefono" class="form-label">Número de teléfono para llamadas*</label>
-                                            <input type="tel" class="form-control" id="usuario_telefono" required>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="usuario_horario_llamadas" class="form-label">Horarios preferidos para llamadas*</label>
-                                            <select class="form-select" id="usuario_horario_llamadas" required>
-                                                <option value="" selected disabled>Seleccione...</option>
-                                                <option value="manana">Mañana (9am-12pm)</option>
-                                                <option value="tarde">Tarde (2pm-5pm)</option>
-                                                <option value="noche">Noche (6pm-8pm)</option>
-                                                <option value="flexible">Flexible</option>
-                                            </select>
+                                            <input type="tel" class="form-control" id="usuario_telefono"  placeholder="4121234567" required>
                                         </div>
                                     </div>
                                     
-                                    <div class="mb-3">
+                                    <div class="mb-3 d-none">
                                         <label for="usuario_intereses" class="form-label">Intereses o temas de conversación favoritos</label>
                                         <textarea class="form-control" id="usuario_intereses" rows="2" placeholder="Lectura, películas, orar (rezar el Rosario), abordar barreras tecnológicas, etc."></textarea>
                                     </div>
                                     
                                     <div class="row mb-3">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 d-none">
                                             <label for="usuario_necesidades" class="form-label">Necesidades específicas de apoyo</label>
                                             <textarea class="form-control" id="usuario_necesidades" rows="2" placeholder="Ej: dificultad visual"></textarea>
                                         </div>
@@ -301,7 +367,7 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="row mb-3">
+                                    <div class="row mb-3 d-none">
                                         <div class="col-md-6">
                                             <label for="usuario_contacto_emergencia" class="form-label">Persona de contacto de emergencia (opcional)</label>
                                             <input type="text" class="form-control" id="usuario_contacto_emergencia">
