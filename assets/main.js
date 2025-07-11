@@ -118,6 +118,7 @@ $(document).ready(function() {
             usuario_nombres: $('#usuario_nombres').val(),
             usuario_apellidos: $('#usuario_apellidos').val(),
             usuario_fecha_nacimiento: $('#usuario_fecha_nacimiento').val(),
+            usuario_edad: $('input[name="usuario_edad"]:checked').val(),
             usuario_genero: $('input[name="usuario_genero"]:checked').val(),
             usuario_idioma: $('input[name="usuario_idioma"]:checked').val(),
             usuario_codigo_pais: $('#usuario_codigo_pais').val(),
