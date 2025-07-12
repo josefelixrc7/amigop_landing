@@ -134,8 +134,8 @@ h2.text-center:after {
 }
 
 .btn-secondary:hover {
-    background-color: var(--secondary);
-    border-color: var(--secondary);
+    background-color: var(--accent);
+    border-color: var(--accent);
 }
 
 .btn-outline-primary {
