@@ -301,7 +301,7 @@ h2.text-center:after {
 }
 
 .form-card .card-header {
-    background-color: var(--primary);
+    background-color: var(--primary2);
     color: var(--white);
     padding: 20px;
     text-align: center;
