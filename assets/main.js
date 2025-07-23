@@ -79,7 +79,7 @@ $(document).ready(function() {
         });
 
         // Telephone validation
-        const regexNumeros = /^\d{10}$/;
+        const regexNumeros = /^\d{15}$/;
         if (regexNumeros.test($('#cliente_telefono').val()) === false)
         {
             $('#cliente_telefono').addClass('is-invalid');
