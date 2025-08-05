@@ -79,7 +79,7 @@ $(document).ready(function() {
         });
 
         // Telephone validation
-        /*const regexNumeros = /^\d{15}$/;
+        const regexNumeros = /^\d+$/;
         if (regexNumeros.test($('#cliente_telefono').val()) === false)
         {
             $('#cliente_telefono').addClass('is-invalid');
@@ -89,7 +89,7 @@ $(document).ready(function() {
         {
             $('#usuario_telefono').addClass('is-invalid');
             isValid = false;
-        }*/
+        }
         
         if (!isValid)
         {
