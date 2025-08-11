@@ -686,10 +686,6 @@
                                         </select>
                                     </div>
                                     
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="termsConditions" required>
-                                        <label class="form-check-label" for="termsConditions">Acepto los términos y condiciones*</label>
-                                    </div>
                                 </fieldset>
                                 
                                 <!-- User Information -->
@@ -705,11 +701,13 @@
                                             <label for="usuario_apellidos" class="form-label">Apellidos*</label>
                                             <input type="text" class="form-control" id="usuario_apellidos" required>
                                         </div>
-                                        <div class="col-md-4 d-none">
-                                            <label for="usuario_fecha_nacimiento" class="form-label">Fecha de nacimiento*</label>
-                                            <input type="date" class="form-control" id="usuario_fecha_nacimiento">
-                                        </div>
                                         <div class="col-md-4">
+                                            <label for="usuario_fecha_nacimiento" class="form-label">Fecha de nacimiento*</label>
+                                            <input type="date" class="form-control" id="usuario_fecha_nacimiento" required>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
                                             <label for="usuario_edad" class="form-label">Edad*</label>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="usuario_edad" value="50_60" required>
@@ -735,6 +733,10 @@
                                                 <input class="form-check-input" type="radio" name="usuario_edad" value="100plus" required>
                                                 <label class="form-check-label">100+</label>
                                             </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="usuario_correo" class="form-label">Correo electr&oacute;nico</label>
+                                            <input type="email" class="form-control" id="usuario_correo" required>
                                         </div>
                                     </div>
                                     
@@ -1012,6 +1014,13 @@
                                         </div>
                                     </div>
                                     
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="usuario_telefono_fijo" class="form-label">Tel&eacute;fono fijo (Opcional)</label>
+                                            <input type="tel" class="form-control" id="usuario_telefono_fijo" placeholder="02120001122">
+                                        </div>
+                                    </div>
+
                                     <div class="mb-3 d-none">
                                         <label for="usuario_intereses" class="form-label">Intereses o temas de conversación favoritos</label>
                                         <textarea class="form-control" id="usuario_intereses" rows="2" placeholder="Lectura, películas, orar (rezar el Rosario), abordar barreras tecnológicas, etc."></textarea>
@@ -1054,6 +1063,10 @@
                                                 </select>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="termsConditions" required>
+                                        <label class="form-check-label" for="termsConditions">Acepto y declaro haber leído los <a href="assets/contrato-amigop.pdf" target="_blank">Términos y condiciones</a>*</label>
                                     </div>
                                 </fieldset>
                                 

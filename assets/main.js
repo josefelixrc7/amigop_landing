@@ -90,6 +90,11 @@ $(document).ready(function() {
             $('#usuario_telefono').addClass('is-invalid');
             isValid = false;
         }
+        if (regexNumeros.test($('#usuario_telefono_fijo').val()) === false)
+        {
+            $('#usuario_telefono_fijo').addClass('is-invalid');
+            isValid = false;
+        }
         
         if (!isValid)
         {
@@ -123,6 +128,8 @@ $(document).ready(function() {
             usuario_idioma: $('input[name="usuario_idioma"]:checked').val(),
             usuario_codigo_pais: $('#usuario_codigo_pais').val(),
             usuario_telefono: $('#usuario_telefono').val(),
+            usuario_telefono_fijo: $('#usuario_telefono_fijo').val(),
+            usuario_correo: $('#usuario_correo').val(),
             usuario_horario_llamadas: $('input[name="usuario_horario_llamadas"]:checked').val(),
             usuario_intereses: $('#usuario_intereses').val(),
             usuario_necesidades: $('#usuario_necesidades').val(),
